@@ -2,6 +2,7 @@ require "./timecop/*"
 
 module Timecop
   extend self
+  @@frozen : Time | Nil
 
   def now
     @@frozen || Time.now
